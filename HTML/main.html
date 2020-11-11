@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bike Shop</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/ordering.css">
+    <link rel="stylesheet" href="../css/basket.css">
+</head>
+<body>
+<header>
+    <div class =  "topnav">
+        <p id="logo"><img src="images/main/logo.png" alt="logo"></p>
+        <p id="basket"><img src="images/main/basket.png" alt="basket" width="30px" style="background-color: black"></p>
+        <ul class="topnavMenu">
+            <li>MAIN</li>
+            <li id="bikes">BIKES</li>
+            <li>BEST BUY</li>
+            <li>OFFERS</li>
+        </ul>
+
+    </div>
+
+    <div class="basketDiv" id="basketDi">
+        <div class="oneofItemInCart">
+            <img src="../HTML/images/catalog/bmx/BMX%20Eastern%20Cobra%2020%20Mint%202020.jpg.png" width="70px" height="70px" alt="">
+            <p class="nameofBike">Name of bike</p>
+            <input type="text" value="1" class="inputNum">
+            <p class="priseOfBike">230$</p>
+            <button class="orderDelete">delete</button>
+        </div>
+
+        <button class="cartButton">goto cart</button>
+    </div>
+</header>
+<div id="main">
+    <div class="infoBlock">
+        <p class="textofInfoBox">What a beautiful bike </p>
+        <p class="textofInfoBox">timeless, atmospheric</p>
+        <p class="textofInfoBox" id="last">& uncredible bikes!</p>
+        <div class="photosofInfoBlock">
+            <img class="photosofInfoBlockImage" src="images/main/left.jpg" width="29%" alt="mountainBike">
+            <img class="photosofInfoBlockImage" id="centerPhotoofInfoBlock" src="images/main/center.jpg" width="14.5%" alt="roadBike">
+            <img class="photosofInfoBlockImage" src="images/main/right.jpg" width="29%" alt="forestBike">
+        </div>
+    </div>
+<div style="background-color: green; margin: 0; padding:10px 10px">
+    <h1 style="color: white">bestseller</h1>
+</div>
+    <div class="sales">
+        <img src="../HTML/images/main/salesBike.png" width="40%" alt="">
+        <div class="salesInfo">
+            <p class="headSales">Bicycle RetroSyperb Vii #1</p>
+            <p class="h2Sales">by Rodriguez Else</p>
+            <p class="prise">299.99$</p>
+            <button class="saleButton">Add to Shopping bag</button>
+        </div>
+    </div>
+    <div class="scroll">
+
+    </div>
+    <div class="browseShop">
+        <button class="browseShopButton">browse shop</button>
+    </div>
+</div>
+
+
+<footer>
+    <ul class="footerMenu">
+        <li>terms & conditions</li>
+        <li>return policy</li>
+        <li>reviews</li>
+        <li>about shop</li>
+        <li>secure payment</li>
+    </ul>
+    <div class="social">
+        <img src="../HTML/images/paypal.png" alt="paypal" width="6%">
+        <img class="centrImageSocial" src="../HTML/images/unionpay.png" alt="unionpay" width="6%">
+        <img src="../HTML/images/visa.png" alt="visa" width="6%">
+        <img class="centrImageSocial" src="../HTML/images/AE.png" alt="americanExpress" width="6%">
+        <img src="../HTML/images/ya.png" alt="yandex" width="6%">
+    </div>
+</footer>
+</body>
+<script type="application/json" src="../js/package.json"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+</html>

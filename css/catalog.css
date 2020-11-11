@@ -1,0 +1,46 @@
+.Type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 0;
+    grid-template-areas:
+    "div1 div2 div3 div4"
+    ". . . ."
+    ". . . .";
+}
+
+.div1 { grid-area: div1; }
+.div2 { grid-area: div2; }
+.div3 { grid-area: div3; }
+.div4 { grid-area: div4; }
+
+.div1, .div2, .div3, .div4{
+    padding-top: 20px;
+    border-radius: 20px ;
+    background-color: white;
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
+
+
+
+
+p{
+    font-weight: bold;
+}
+
+
+
+
+
+.AddButton{
+    width: 98%;
+    text-transform: uppercase;
+    background-color: #e7dedb;
+    border: 5px solid #b7a49e;
+    color: #b7a49e;
+    padding: 5% 35%;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,93 @@
+{
+  "bikes":[{
+    "url": "Orbea_Avant_H30",
+    "productName": "Orbea Avant H30 53 Anthrectine-Black",
+    "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
+    "prise": "199",
+    "images": "../HTML/images/catalog/shosseBike/Orbea%20Avant%20H60%202019%2053%20Black-Red-White%20(J10053H3).jpg",
+    "categoryID": "1"
+  },
+    {
+      "url": "Orbea_Avant_H60",
+      "productName": "Orbea Avant H60 53 Black-Red-White",
+      "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
+      "prise": "599",
+      "images": "../HTML/images/catalog/shosseBike/Orbea%20Avant%20H30%202020%2053%20Anthracite-Black%20(K10353G9).jpg",
+      "categoryID": "1"
+  },
+    {
+      "url": "Orbea_Terra_H30-D",
+      "productName": "Orbea Terra H30-D 1X M 2020 Green (K10955BE)",
+      "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
+      "prise": "799",
+      "images": "../HTML/images/catalog/shosseBike/Orbea%20Terra%20H30-D%201X%20M%202020%20Green%20(K10955BE).jpg",
+      "categoryID": "1"
+    },
+    {
+      "url": "Pride_RocX",
+      "productName": "Pride RocX 8.2 28",
+      "info": "The Pride Rocx 8.1 FLB gravel bike is a reliable model developed by Ukrainian specialists. The bike features an aluminum frame and 28-inch wheels. The system is also impressive - a Shimano Claris attachment with 16 gears and a mechanical disc brake. The bike can easily develop the required speed, quickly and smoothly brakes, and rides on a flat road, paths or even fields without problems. Suitable for regular walks or long distance trips.",
+      "prise": "999",
+      "images": "../HTML/images/catalog/shosseBike/Pride%20RocX%208.2%2028.jpg",
+      "categoryID": "1"
+    },
+    {
+      "url": "Eastern_Cobra",
+      "productName": "BMX Eastern Cobra 20 Mint 2020",
+      "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
+      "prise": "799",
+      "images": "../HTML/images/catalog/bmx/BMX%20Eastern%20Cobra%2020%20Mint%202020.jpg.png",
+      "categoryID": "2"
+    },
+    {
+      "url": "Eastern_Javelin",
+      "productName": "BMX Eastern Cobra 20 Mint 2020",
+      "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
+      "prise": "799",
+      "images": "../HTML/images/catalog/bmx/BMX%20Eastern%20Javelin%2020.5%20Black%202020.jpg",
+      "categoryID": "2"
+    },
+    {
+      "url": "GT_AIR",
+      "productName": "BMX GT AIR 20 Raw 2020",
+      "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
+      "prise": "599",
+      "images": "./HTML/images/catalog/bmx/BMX%20GT%20AIR%2020%20Raw%202020.jpg",
+      "categoryID": "2"
+    },
+    {
+      "url": "Stolen_Casino",
+      "productName": "Stolen Casino Cotton Candy Pink",
+      "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
+      "prise": "799",
+      "images": "../HTML/images/catalog/bmx/Stolen%20Casino%2020.25%2020%202020%20Cotton%20Candy%20Pink.jpg",
+      "categoryID": "2"
+    }],
+
+
+  "productsCategories": [{
+    "url": "sport",
+    "name": "Sport",
+    "info":"A sportbike, or sports bike, is a motorcycle optimized for speed, acceleration, braking, and cornering on paved roads, typically at the expense of comfort and fuel economy by comparison with other motorcycles. Soichiro Honda wrote in the owner's manual of the 1959 Honda CB92 Benly Super Sport that, \"Primarily, essentials of the motorcycle consists in the speed and the thrill,\" while Cycle World's Kevin Cameron says that, \"A sportbike is a motorcycle whose enjoyment consists mainly from its ability to perform on all types of paved highway – its cornering ability, its handling, its thrilling acceleration and braking power, even (dare I say it?) its speed."
+  },
+    {
+      "url": "bmx",
+      "name": "bmx",
+      "info":"BMX (English Bicycle MotoX is an abbreviation for cross) is a type of bicycle originally invented by adult motocross fans for training. For children - future athletes of motocross and motocross, it was physically impossible to learn how to ride full-size motorcycles for motocross, and there were no special children's models at that distant time (1960s). This bike was easier to learn. Then BMX has already grown into a separate sport, divided into several disciplines, three of which are Olympic sports - BMX freestyle, BMX dirt, and BMX racing."
+    },
+    {
+      "url": "mtb",
+      "name": "mountain bike",
+      "info":"A mountain bike (MTB) or mountain bicycle is a bicycle designed for off-road cycling. Mountain bikes share some similarities with other bicycles, but incorporate features designed to enhance durability and performance in rough terrain"
+    }],
+
+  "sales": [{}],
+
+  "sliderData": [{
+    "url": "",
+    "images": ["", "", ""],
+    "pointImg": ""
+  }]
+}
+
+
