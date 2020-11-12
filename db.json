@@ -74,16 +74,19 @@
 
 
   "productsCategories": [{
+    "id": "1",
     "url": "sport",
     "name": "Sport",
     "info":"A sportbike, or sports bike, is a motorcycle optimized for speed, acceleration, braking, and cornering on paved roads, typically at the expense of comfort and fuel economy by comparison with other motorcycles. Soichiro Honda wrote in the owner's manual of the 1959 Honda CB92 Benly Super Sport that, \"Primarily, essentials of the motorcycle consists in the speed and the thrill,\" while Cycle World's Kevin Cameron says that, \"A sportbike is a motorcycle whose enjoyment consists mainly from its ability to perform on all types of paved highway – its cornering ability, its handling, its thrilling acceleration and braking power, even (dare I say it?) its speed."
   },
     {
+      "id": "2",
       "url": "bmx",
       "name": "bmx",
       "info":"BMX (English Bicycle MotoX is an abbreviation for cross) is a type of bicycle originally invented by adult motocross fans for training. For children - future athletes of motocross and motocross, it was physically impossible to learn how to ride full-size motorcycles for motocross, and there were no special children's models at that distant time (1960s). This bike was easier to learn. Then BMX has already grown into a separate sport, divided into several disciplines, three of which are Olympic sports - BMX freestyle, BMX dirt, and BMX racing."
     },
     {
+      "id": "3",
       "url": "mtb",
       "name": "mountain bike",
       "info":"A mountain bike (MTB) or mountain bicycle is a bicycle designed for off-road cycling. Mountain bikes share some similarities with other bicycles, but incorporate features designed to enhance durability and performance in rough terrain"
