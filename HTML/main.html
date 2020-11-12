@@ -5,20 +5,26 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/ordering.css">
     <link rel="stylesheet" href="../css/basket.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/loader.css">
 </head>
 <body>
 <header>
+
     <div class =  "topnav">
         <p id="logo"><img src="images/main/logo.png" alt="logo"></p>
         <p id="basket"><img src="images/main/basket.png" alt="basket" width="30px" style="background-color: black"></p>
         <ul class="topnavMenu">
-            <li>MAIN</li>
+            <li id="main">MAIN</li>
             <li id="bikes">BIKES</li>
             <li>BEST BUY</li>
             <li>OFFERS</li>
         </ul>
 
     </div>
+
+
 
     <div class="basketDiv" id="basketDi">
         <div class="oneofItemInCart">
@@ -32,7 +38,9 @@
         <button class="cartButton">goto cart</button>
     </div>
 </header>
-<div id="main">
+
+<div class="main" id = "allMain" data-value = "main">
+
     <div class="infoBlock">
         <p class="textofInfoBox">What a beautiful bike </p>
         <p class="textofInfoBox">timeless, atmospheric</p>
@@ -63,7 +71,7 @@
     </div>
 </div>
 
-
+<div id = "end"></div>
 <footer>
     <ul class="footerMenu">
         <li>terms & conditions</li>
@@ -83,4 +91,6 @@
 </body>
 <script type="application/json" src="../js/package.json"></script>
 <script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/parsejson.js"> </script>
+<script type="text/javascript" src="../js/catalogCreator.js"></script>
 </html>

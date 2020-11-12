@@ -1,5 +1,6 @@
 {
   "bikes":[{
+    "id": "0",
     "url": "Orbea_Avant_H30",
     "productName": "Orbea Avant H30 53 Anthrectine-Black",
     "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
@@ -8,6 +9,7 @@
     "categoryID": "1"
   },
     {
+      "id": "1",
       "url": "Orbea_Avant_H60",
       "productName": "Orbea Avant H60 53 Black-Red-White",
       "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
@@ -16,6 +18,7 @@
       "categoryID": "1"
   },
     {
+      "id": "2",
       "url": "Orbea_Terra_H30-D",
       "productName": "Orbea Terra H30-D 1X M 2020 Green (K10955BE)",
       "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
@@ -24,6 +27,7 @@
       "categoryID": "1"
     },
     {
+      "id": "3",
       "url": "Pride_RocX",
       "productName": "Pride RocX 8.2 28",
       "info": "The Pride Rocx 8.1 FLB gravel bike is a reliable model developed by Ukrainian specialists. The bike features an aluminum frame and 28-inch wheels. The system is also impressive - a Shimano Claris attachment with 16 gears and a mechanical disc brake. The bike can easily develop the required speed, quickly and smoothly brakes, and rides on a flat road, paths or even fields without problems. Suitable for regular walks or long distance trips.",
@@ -32,6 +36,7 @@
       "categoryID": "1"
     },
     {
+      "id": "4",
       "url": "Eastern_Cobra",
       "productName": "BMX Eastern Cobra 20 Mint 2020",
       "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
@@ -40,6 +45,7 @@
       "categoryID": "2"
     },
     {
+      "id": "5",
       "url": "Eastern_Javelin",
       "productName": "BMX Eastern Cobra 20 Mint 2020",
       "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
@@ -48,6 +54,7 @@
       "categoryID": "2"
     },
     {
+      "id": "6",
       "url": "GT_AIR",
       "productName": "BMX GT AIR 20 Raw 2020",
       "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
@@ -56,6 +63,7 @@
       "categoryID": "2"
     },
     {
+      "id": "7",
       "url": "Stolen_Casino",
       "productName": "Stolen Casino Cotton Candy Pink",
       "info": "The Spanish company ORBEA has been manufacturing bicycles since 1930 and is the leader in the Spanish market to this day. Today, Orbea is at the top echelon of the world's top bicycle brands by using the latest frame technology.\nCountry of registration of the brand - Spain\nCountry of origin - Spain / Portugal\nOrbea Official Frame Warranty - Lifetime\n",
