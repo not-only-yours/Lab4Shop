@@ -7,7 +7,7 @@
     "prise": "199",
     "images": "../HTML/images/catalog/shosseBike/Orbea%20Avant%20H60%202019%2053%20Black-Red-White%20(J10053H3).jpg",
     "categoryID": "sport",
-    "pcs": "0"
+    "pcs": "1"
   },
     {
       "id": "1",
@@ -17,7 +17,7 @@
       "prise": "599",
       "images": "../HTML/images/catalog/shosseBike/Orbea%20Avant%20H30%202020%2053%20Anthracite-Black%20(K10353G9).jpg",
       "categoryID": "sport",
-      "pcs": "0"
+      "pcs": "1"
   },
     {
       "id": "2",
@@ -27,7 +27,7 @@
       "prise": "799",
       "images": "../HTML/images/catalog/shosseBike/Orbea%20Terra%20H30-D%201X%20M%202020%20Green%20(K10955BE).jpg",
       "categoryID": "sport",
-      "pcs": "0"
+      "pcs": "1"
     },
     {
       "id": "3",
@@ -37,7 +37,7 @@
       "prise": "999",
       "images": "../HTML/images/catalog/shosseBike/Pride%20RocX%208.2%2028.jpg",
       "categoryID": "sport",
-      "pcs": "0"
+      "pcs": "1"
     },
     {
       "id": "4",
@@ -47,7 +47,7 @@
       "prise": "799",
       "images": "../HTML/images/catalog/bmx/BMX%20Eastern%20Cobra%2020%20Mint%202020.jpg.png",
       "categoryID": "bmx",
-      "pcs": "0"
+      "pcs": "1"
     },
     {
       "id": "5",
@@ -57,7 +57,7 @@
       "prise": "799",
       "images": "../HTML/images/catalog/bmx/BMX%20Eastern%20Javelin%2020.5%20Black%202020.jpg",
       "categoryID": "bmx",
-      "pcs": "0"
+      "pcs": "1"
     },
     {
       "id": "6",
@@ -67,7 +67,7 @@
       "prise": "599",
       "images": "../HTML/images/catalog/bmx/BMX%20GT%20AIR%2020%20Raw%202020.jpg",
       "categoryID": "bmx",
-      "pcs": "0"
+      "pcs": "1"
     },
     {
       "id": "7",
@@ -77,7 +77,7 @@
       "prise": "799",
       "images": "../HTML/images/catalog/bmx/Stolen%20Casino%2020.25%2020%202020%20Cotton%20Candy%20Pink.jpg",
       "categoryID": "bmx",
-      "pcs": "0"
+      "pcs": "1"
     }],
 
 
