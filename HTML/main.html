@@ -15,27 +15,23 @@
     <div class =  "topnav">
         <p id="logo"><img src="images/main/logo.png" alt="logo"></p>
         <p id="basket"><img src="images/main/basket.png" alt="basket" width="30px" style="background-color: black"></p>
-        <ul class="topnavMenu">
+        <ul class="topnavMenu" id = "menu">
             <li id="main">MAIN</li>
             <li id="bikes">BIKES</li>
             <li>BEST BUY</li>
             <li>OFFERS</li>
         </ul>
+        <ul class="topnavMenu" id = "cart" style="display: none;text-transform: uppercase;" >
+            <li>visit cart</li>
+        </ul>
+    </div>
 
+<div>
+
+    <div class="basketDiv" id="basketDi">
     </div>
 
 
-
-    <div class="basketDiv" id="basketDi">
-        <div class="oneofItemInCart">
-            <img src="../HTML/images/catalog/bmx/BMX%20Eastern%20Cobra%2020%20Mint%202020.jpg.png" width="70px" height="70px" alt="">
-            <p class="nameofBike">Name of bike</p>
-            <input type="text" value="1" class="inputNum">
-            <p class="priseOfBike">230$</p>
-            <button class="orderDelete">delete</button>
-        </div>
-
-        <button class="cartButton">goto cart</button>
     </div>
 </header>
 
@@ -93,4 +89,5 @@
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript" src="../js/parsejson.js"> </script>
 <script type="text/javascript" src="../js/catalogCreator.js"></script>
+<script type="text/javascript" src="../js/workWithLocalStorage.js"></script>
 </html>
