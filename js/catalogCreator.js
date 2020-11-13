@@ -103,11 +103,11 @@ function createGridsContent(elem){
                 }
             }
             var text = document.createElement('h1')
-
                 if(!document.getElementById("sport")) {
-                    text.innerHTML = "cuggested"
+                    text.innerHTML = "suggested"
                     mainBlockOfCatalog.appendChild(text)
-
+                    text.style.marginTop = "-50px"
+                    text.style.backgroundColor = "green"
                 }
             mainBlockOfCatalog.appendChild(div)
         })
@@ -191,27 +191,41 @@ function createInfobox(aa){
     var div4 = document.createElement('div')
     div3.classList.add("about__left")
     div4.classList.add("about__right")
-    div2.appendChild(div3, div4)
+    div2.appendChild(div3)
+    div2.appendChild(div4)
+    div4.style.marginTop = "-80px"
     var img = document.createElement('img')
-    img.src = aa.img
+    img.src = aa.images
+    img.style.width = "3000px"
+    img.style.marginLeft = "50px"
     img.classList.add("mw-100")
     div3.appendChild(img)
     var h1 = document.createElement('h1')
     h1.innerHTML = "SOME WORDS ABOUT BIKE"
     var p = document.createElement('p')
     p.innerHTML = aa.info
-    div3.appendChild(h1,p)
+    div4.appendChild(h1)
+    div4.appendChild(p)
     var ul = document.createElement('ul')
     var li1 = document.createElement('li')
     var li2 = document.createElement('li')
     var first1 = aa.prise
-    var second = "prise: "
+    var second = "price: "
     li1.innerHTML = second.concat(first1)
+    li1.style.fontSize = "50px"
+    li1.style.textTransform = "uppercase"
+    li1.style.fontWeight = "bold"
+    li1.style.backgroundColor = "#e7dedb"
+    li1.style.listStyleType = "none"
+    li1.style.borderRadius = "10px"
     first1 = aa.categoryID
     second = "Category: "
     li2.innerHTML = second.concat(first1)
-    ul.appendChild(li1,li2)
-    div3.appendChild(ul)
+    li2.style.textTransform = "uppercase"
+    li2.style.fontWeight = "bold"
+    ul.appendChild(li1)
+    ul.appendChild(li2)
+    div4.appendChild(ul)
     var btn = document.createElement("BUTTON");
     btn.classList.add('AddButton')
     var first = aa.id
@@ -221,10 +235,10 @@ function createInfobox(aa){
     btn.onclick = function (){
         addToLocalStorage(aa);
     }
+    div4.appendChild(btn)
     //console.log(btn.id)
     document.getElementById('allMain').appendChild(text)
     document.getElementById('allMain').appendChild(div1)
-    document.getElementById('allMain').appendChild(btn)
 }
 
 
@@ -237,16 +251,25 @@ function contentofBlock(ai){
     createCatalog()
     addClickeventtoCatalogLi()
 
-    //TODO write info about every elem of ul
+
     JSON.stringify(sendRequest('GET', URL)
         .then(data => {
             for(var key in data.productsCategories) {
                 if(ai === data.productsCategories[key].url){
                     var text = document.createElement('H1')
+                    text.style.backgroundColor = "#b7a49e"
                     text.innerHTML = data.productsCategories[key].name
                     document.getElementById('allMain').appendChild(text)
                     var p = document.createElement('p')
                     p.innerHTML = data.productsCategories[key].info
+                    p.style.paddingLeft = "40px"
+                    p.style.paddingight = "40px"
+                    p.style.paddingTop = "20px"
+                    p.style.paddingBottom = "20px"
+                    p.style.fontSize = "20px"
+                    p.style.borderRadius = "10px"
+                    p.style.backgroundColor = "#cbcbcb"
+                    //TODO write info about
                     document.getElementById('allMain').appendChild(p)
                 }
             }
