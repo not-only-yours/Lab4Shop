@@ -64,6 +64,7 @@ function createDiv(aa){
 
 function funcDelete(aa){
     aa = aa.replace('cart','')
+    console.log(aa)
     var  arr = JSON.parse(localStorage["cart"])
     var shouldDelete = true
     console.log(arr)
@@ -77,8 +78,9 @@ function funcDelete(aa){
     for(var key in arr){
         createDiv(arr[key])
     }
-    if(arr.size)
-    localStorage["cart"] = JSON.stringify(arr)
+    if(Array.isArray(arr) && arr.length) {
+        localStorage["cart"] = JSON.stringify(arr)
+    }
     else{
         localStorage.removeItem("cart")
         var p = document.createElement('p')
