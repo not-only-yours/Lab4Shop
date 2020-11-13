@@ -18,15 +18,22 @@ document.getElementById("bikes").onclick = function () {
         createAllPageCatalog()
         addClickeventtoCatalogLi()
         addClickeventtoGridButtons()
-
+    document.getElementById('basket').style.display = "block"
+    createCart()
 }
 
 document.getElementById("main").onclick = function (){
     createMain();
+    document.getElementById('basket').style.display = "block"
+    createCart()
 }
 
 
 window.onload = () => {
+    createCart()
+}
+
+function createCart(){
     if(localStorage["cart"]) {
         var arr = JSON.parse(localStorage["cart"])
         document.getElementById('basketDi').innerHTML = ""
@@ -34,10 +41,11 @@ window.onload = () => {
             createDiv(arr[key])
         }
     }else{
-        var p = document.createElement('p')
-        p.classList.add("nameofBike")
-        p.classList.add("empty")
-        p.innerHTML = "cart is empty"
-        document.getElementById('basketDi').appendChild(p)
+        document.getElementById('basketDi').innerHTML = ""
+            var p = document.createElement('p')
+            p.classList.add("nameofBike")
+            p.classList.add("empty")
+            p.innerHTML = "cart is empty"
+            document.getElementById('basketDi').appendChild(p)
     }
 }

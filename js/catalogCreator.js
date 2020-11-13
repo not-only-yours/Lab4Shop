@@ -258,6 +258,7 @@ function contentofBlock(ai){
                 if(ai === data.productsCategories[key].url){
                     var text = document.createElement('H1')
                     text.style.backgroundColor = "#b7a49e"
+                    text.style.width = "98.3%"
                     text.innerHTML = data.productsCategories[key].name
                     document.getElementById('allMain').appendChild(text)
                     var p = document.createElement('p')
