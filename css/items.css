@@ -1,0 +1,47 @@
+
+.main__about{
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+.about__right{
+    text-align: center;
+    margin-left: 175px;
+}
+.about__right h1{
+    display: inline-block;
+    border-bottom: 3px solid #fcac45;
+    padding-bottom: 20px;
+}
+.about__right p{
+    margin: 30px 0 50px 0;
+    color: #6c6c6c;
+}
+.about__right li{
+    padding-left: 25px;
+    margin-top: 10px;
+}
+.main__welcome{
+    padding: 50px 0 50px 0;
+}
+.main__welcome p{
+    font-size: 14px;
+}
+.main__welcome h1{
+    font-size: 25px;
+}
+.mw-100{
+    max-width: 100%;
+}
+.wrapper{
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
