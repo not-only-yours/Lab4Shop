@@ -284,4 +284,14 @@ margin: 0 10px 0 10px;
     max-height: 300px;
 }
 
+@media (max-width: 1200px) {
+    h1{
+        width: 97%;
+    }
+    .div1 img{
+        min-height: 200px;
+        max-height: 200px;
+    }
+}
+
 

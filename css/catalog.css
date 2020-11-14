@@ -4,6 +4,12 @@
 
 }
 
+@media (max-width: 1200px) {
+    .Type{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 .catalog{
     background-color: white;
     margin: 0;
