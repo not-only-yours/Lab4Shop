@@ -19,8 +19,7 @@
         <ul class="topnavMenu" id = "menu">
             <li id="main">MAIN</li>
             <li id="bikes">BIKES</li>
-            <li>BEST BUY</li>
-            <li>OFFERS</li>
+            <li id = "offers">OFFERS</li>
         </ul>
         <ul class="topnavMenu" id = "cart" style="display: none;text-transform: uppercase;" >
             <li id ="createorder">visit cart</li>
@@ -35,7 +34,7 @@
 
     </div>
 </header>
-
+<div id="spinner"></div>
 <div class="main" id = "allMain" data-value = "main">
 
     <div class="infoBlock">
@@ -57,13 +56,13 @@
             <p class="headSales">Bicycle RetroSyperb Vii #1</p>
             <p class="h2Sales">by Rodriguez Else</p>
             <p class="prise">299.99$</p>
-            <button class="saleButton">Add to Shopping bag</button>
+            <button class="saleButton" id = "sale" onclick="mainSale()">Add to Shopping bag</button>
         </div>
     </div>
     <div class="scroll">
 
     </div>
-    <div class="browseShop">
+    <div class="browseShop" onclick=browseShop()>
         <button class="browseShopButton">browse shop</button>
     </div>
 </div>
@@ -86,9 +85,11 @@
     </div>
 </footer>
 </body>
+<script type="text/javascript" src="../js/routing.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript" src="../js/parsejson.js"> </script>
 <script type="text/javascript" src="../js/catalogCreator.js"></script>
 <script type="text/javascript" src="../js/workWithLocalStorage.js"></script>
 <script type="text/javascript" src="../js/createOrder.js"></script>
+<script src="../js/viberMessages.js"> </script>
 </html>

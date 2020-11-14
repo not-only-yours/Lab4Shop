@@ -112,6 +112,7 @@ function createGridsContent(elem){
             mainBlockOfCatalog.appendChild(div)
         })
         .catch(err => console.log(err)))
+
 }
 
 
@@ -140,8 +141,8 @@ function addClickeventtoGridButtons(){
                 //console.log(document.getElementById(data.bikes[key].id))
                 if(document.getElementById(data.bikes[key].id))
                 document.getElementById(data.bikes[key].id).onclick = function (){
-
-                    contentofElement(this.id)
+                    var aa = "product/"
+                    location.hash = aa.concat(this.id)
                 }
             }
         })
@@ -155,7 +156,8 @@ function addClickeventtoCatalogLi(){
         .then(data => {
             for(var key in data.productsCategories) {
                 document.getElementById(data.productsCategories[key].url).onclick = function (){
-                    contentofBlock(this.id)
+                    var fir = "catalog/"
+                    location.hash = fir.concat(this.id)
                 }
             }
         })

@@ -1,11 +1,7 @@
 
 
 document.getElementById('createorder').onclick = () =>{
-    createOrder();
-    document.getElementById('basket').style.display = "none"
-    document.getElementById('basketDi').style.display = "none"
-    document.getElementById("cart").style.display = "none";
-    document.getElementById("menu").style.display = "block";
+    location.hash = "createOrder"
 }
 
 
@@ -68,8 +64,16 @@ function createOrder() {
     h1second.style.backgroundColor = "#b7a49e"
     div6.appendChild(h1second)
     div6.classList.add('block')
-    if (localStorage["cart"])
+    if (localStorage["cart"]) {
         creator()
+        var btn = document.createElement("BUTTON")
+        btn.id = "viber"
+        btn.style.width = "100%"
+        btn.style.height = "50px"
+        btn.innerHTML = "submit"
+        btn.onclick = send()
+        document.getElementById('allMain').appendChild(btn)
+    }
     else {
         var h1third = document.createElement('h1')
         h1third.innerHTML = "cart is empty. Add smth to confirm order"
@@ -77,6 +81,7 @@ function createOrder() {
         h1third.style.backgroundColor = "#fafafa"
         div6.appendChild(h1third)
     }
+
 }
 
 
@@ -85,6 +90,10 @@ function creator() {
     console.log(arr)
     for (var key in arr) {
         document.getElementById('basketDi').innerHTML = ""
+        var paras = document.getElementsByClassName('oneofItemInCart');
+        while(paras[0]) {
+            paras[0].parentNode.removeChild(paras[0]);
+        }
         for (var key in arr) {
             catalogCreator(arr[key])
         }

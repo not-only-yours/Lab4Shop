@@ -1,35 +1,25 @@
 
 document.getElementById("basket").onclick = function (){
-    if(document.getElementById("basketDi").style.display === "none") {
-        document.getElementById("basketDi").style.display = "block";
-
-        document.getElementById("cart").style.display = "block";
-        document.getElementById("menu").style.display = "none";
-    }else{
-        document.getElementById("basketDi").style.display = "none"
-        document.getElementById("menu").style.display = "block";
-        document.getElementById("cart").style.display = "none";
-    }
+    location.hash += '/basket'
 }
 
 
 
 document.getElementById("bikes").onclick = function () {
-        createAllPageCatalog()
-        addClickeventtoCatalogLi()
-        addClickeventtoGridButtons()
-    document.getElementById('basket').style.display = "block"
-    createCart()
+    location.hash = 'catalog';
 }
 
 document.getElementById("main").onclick = function (){
+    location.hash = '';
     createMain();
+
     document.getElementById('basket').style.display = "block"
     createCart()
 }
 
 
 window.onload = () => {
+    location.hash = '';
     createCart()
 }
 
@@ -49,3 +39,19 @@ function createCart(){
             document.getElementById('basketDi').appendChild(p)
     }
 }
+
+
+function mainSale(){
+    JSON.stringify(sendRequest('GET', URL)
+        .then(data => {
+            for(var key in data.bikes) {
+                if (parseInt(data.bikes[key].id) === 8) {
+                    console.log("wegegwwegewfg")
+                    addToLocalStorage(data.bikes[key])
+                }
+            }
+        })
+        .catch(err => console.log(err)))
+}
+
+

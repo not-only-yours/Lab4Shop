@@ -79,4 +79,6 @@ h1{
     margin-right: 10px;
 }
 
-
+input:invalid{
+    border: 2px solid crimson;
+}
