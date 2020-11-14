@@ -279,4 +279,9 @@ margin: 0 10px 0 10px;
 }
 }
 
+.div1 img{
+    min-height: 300px;
+    max-height: 300px;
+}
+
 
