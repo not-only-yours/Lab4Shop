@@ -1,8 +1,10 @@
 window.onload = () => {
+    knowPrise()
     routing()
 }
 
 window.onhashchange = () =>{
+    knowPrise()
     routing()
 }
 

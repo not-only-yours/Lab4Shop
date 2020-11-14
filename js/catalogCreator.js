@@ -223,6 +223,7 @@ function createInfobox(aa){
     first1 = aa.categoryID
     second = "Category: "
     li2.innerHTML = second.concat(first1)
+    li2.style.listStyleType = "none"
     li2.style.textTransform = "uppercase"
     li2.style.fontWeight = "bold"
     ul.appendChild(li1)

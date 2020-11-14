@@ -19,9 +19,10 @@
         <ul class="topnavMenu" id = "menu">
             <li id="main">MAIN</li>
             <li id="bikes">BIKES</li>
-            <li id = "offers">OFFERS</li>
+            <li id = "offers" onclick=createPageOfSales()>OFFERS</li>
         </ul>
         <ul class="topnavMenu" id = "cart" style="display: none;text-transform: uppercase;" >
+            <li id="total"></li>
             <li id ="createorder">visit cart</li>
         </ul>
     </div>
@@ -92,4 +93,5 @@
 <script type="text/javascript" src="../js/workWithLocalStorage.js"></script>
 <script type="text/javascript" src="../js/createOrder.js"></script>
 <script src="../js/viberMessages.js"> </script>
+<script src="../js/salesPageCreator.js"></script>
 </html>

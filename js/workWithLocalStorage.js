@@ -1,5 +1,7 @@
+
 function addToLocalStorage(aa) {
     if(localStorage.getItem("cart") === null) {
+        document.getElementById('total').innerHTML = "PRISE: 0$"
         document.getElementById('basketDi').innerHTML = ""
         var cart = [];
         cart[0] = aa
@@ -21,10 +23,13 @@ function addToLocalStorage(aa) {
             arr.push(aa)
         }
         document.getElementById('basketDi').innerHTML = ""
+        totalPrise =0;
         for(var key in arr){
+
             createDiv(arr[key])
         }
         localStorage["cart"] = JSON.stringify(arr)
+        knowPrise()
     }
 }
 
@@ -89,7 +94,20 @@ function funcDelete(aa){
         p.innerHTML = "cart is empty"
         document.getElementById('basketDi').appendChild(p)
     }
+    knowPrise()
 }
 
+var totalPrise = 0;
 
+function knowPrise() {
+    totalPrise = 0;
+    var arr = JSON.parse(localStorage.getItem("cart"))
+    for(var key in arr){
+        totalPrise += arr[key].prise * arr[key].pcs
+    }
+    var a = "Prise: "
+    var b = "$"
+    var aa = a.concat(totalPrise.toString())
+    document.getElementById('total').innerHTML = aa.concat(b)
+}
 

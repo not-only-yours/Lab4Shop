@@ -74,6 +74,7 @@ header{
 }
 
 h1{
+    width: 99%;
     border-radius: 10px;
     text-align: center;
     color: white;
