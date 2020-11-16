@@ -19,7 +19,7 @@ function createPageOfSales() {
                 gridElement.appendChild(title)
                 gridElement.appendChild(button)
                 button.innerHTML = "visit"
-                button.id = "visit" + data.sales[key].id
+                button.id = data.sales[key].id
             }
         })
         .catch(err => console.log(err)))
@@ -32,19 +32,18 @@ function createPageOfSales() {
 
 
 function checkButtons(){
-    JSON.stringify(sendRequest('GET', URL)
-        .then(data => {
-            for (var key in data.sales) {
-                if(document.getElementById("visit"+data.sales[key].id))
-                    document.getElementById("visit"+data.sales[key].id).onclick = () => {
-                    var fir = "offer/"
-                    var two = data.sales[key].id
-                    location.hash = fir.concat(two)
+        JSON.stringify(sendRequest('GET', URL)
+            .then(data => {
+                for(var key in data.sales) {
+                    //console.log(document.getElementById(data.bikes[key].id))
+                    if(document.getElementById(data.sales[key].id))
+                        document.getElementById(data.sales[key].id).onclick = function (){
+                            location.hash = "offer/".concat(this.id)
+                        }
                 }
-            }
             })
-        .catch(err => console.log(err)))
-}
+            .catch(err => console.log(err)))
+    }
 
 
 function createPage(aa){

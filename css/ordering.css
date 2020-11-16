@@ -52,6 +52,11 @@ h1{
     height: 20px;
 }
 
+
+.parent input:invalid {
+    border-color: red;
+}
+
 .priseOfBike{
     align-self: center;
     font-size: 21px;

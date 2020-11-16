@@ -54,6 +54,9 @@ function routing(){
         document.getElementById('basketDi').style.display = "none"
         document.getElementById("cart").style.display = "none";
         document.getElementById("menu").style.display = "block";
+    }else if(location.hash.slice(1) === 'checkOrderStatus' && reqestSended){
+        createVarOfOrder();
+        checkOrderStatus();
     }
         else{
             createMain();
