@@ -11,6 +11,7 @@ window.onhashchange = () => {
 
 var checker = false
 function routing(){
+    //console.log(location.hash)
     if(location.hash.slice(-7) === '/basket'){
             document.getElementById("basketDi").style.display = "block";
             document.getElementById("cart").style.display = "block";
@@ -34,7 +35,14 @@ function routing(){
             }else{
                 location.hash = ""
             }
-        }else if(location.hash.slice(1) === 'catalog'){
+    }else if(location.hash.substring(1,7) === 'offer/'){
+        if(parseInt(location.hash.slice(7)) || location.hash.slice(7) === '0') {
+            var id2 = location.hash.slice(7)
+            create(id2)
+        }else{
+            location.hash = ""
+        }
+    } else if(location.hash.slice(1) === 'catalog'){
         createAllPageCatalog()
         addClickeventtoCatalogLi()
         addClickeventtoGridButtons()

@@ -6,7 +6,7 @@ function createPageOfSales() {
     JSON.stringify(sendRequest('GET', URL)
         .then(data => {
             for (var key in data.sales) {
-                console.log(key)
+                //console.log(key)
                 var gridElement = document.createElement('div')
                 gridElement.classList.add('gridElement')
                 div.appendChild(gridElement)
@@ -19,19 +19,36 @@ function createPageOfSales() {
                 gridElement.appendChild(title)
                 gridElement.appendChild(button)
                 button.innerHTML = "visit"
-                button.onclick = () =>{
-                    createPage(data.sales[key]);
-                }
+                button.id = "visit" + data.sales[key].id
             }
         })
         .catch(err => console.log(err)))
 
 
     document.getElementById('allMain').appendChild(div)
+    checkButtons()
+}
+
+
+
+function checkButtons(){
+    JSON.stringify(sendRequest('GET', URL)
+        .then(data => {
+            for (var key in data.sales) {
+                if(document.getElementById("visit"+key))
+                    document.getElementById("visit"+key).onclick = () => {
+                    var fir = "offer/"
+                    var two = data.sales[key].id
+                    location.hash = fir.concat(two)
+                }
+            }
+            })
+        .catch(err => console.log(err)))
 }
 
 
 function createPage(aa){
+    document.getElementById('allMain').innerHTML = ""
     var text = document.createElement('H1')
     text.innerHTML = aa.title
 
@@ -87,3 +104,20 @@ function createPage(aa){
     document.getElementById('allMain').appendChild(text)
     document.getElementById('allMain').appendChild(div1)
 }
+
+
+
+function create(aa){
+    JSON.stringify(sendRequest('GET', URL)
+        .then(data => {
+            for (var key in data.sales) {
+                if(data.sales[key].id === aa){
+                    console.log(data.sales[key])
+                    createPage(data.sales[key])
+                }
+            }
+        })
+        .catch(err => console.log(err)))
+}
+
+
