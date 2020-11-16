@@ -1,6 +1,14 @@
 
 document.getElementById("basket").onclick = function (){
-    location.hash += '/basket'
+    if(location.hash.slice(-7) === '/basket') {
+        location.hash = location.hash.substring(0, location.hash.length - 7)
+        document.getElementById("basketDi").style.display = "none";
+        document.getElementById("cart").style.display = "none";
+        document.getElementById("menu").style.display = "block";
+    }
+    else {
+        location.hash += '/basket'
+    }
 }
 
 
@@ -16,6 +24,13 @@ document.getElementById("main").onclick = function (){
     document.getElementById('basket').style.display = "block"
     createCart()
 }
+
+
+document.getElementById('offers').onclick = () => {
+    location.hash = 'offers'
+    routing()
+}
+
 
 
 window.onload = () => {

@@ -3,26 +3,21 @@ window.onload = () => {
     routing()
 }
 
-window.onhashchange = () =>{
+window.onhashchange = () => {
     knowPrise()
     routing()
 }
 
 
+var checker = false
 function routing(){
     if(location.hash.slice(-7) === '/basket'){
-        if(document.getElementById("basketDi").style.display === "none") {
             document.getElementById("basketDi").style.display = "block";
             document.getElementById("cart").style.display = "block";
             document.getElementById("menu").style.display = "none";
-        }else{
-            document.getElementById("basketDi").style.display = "none"
-            document.getElementById("menu").style.display = "block";
-            document.getElementById("cart").style.display = "none";
-            location.hash = location.hash.substring(0, location.hash.length - 7)
-            if(location.hash.slice(1) !== "catalog" && location.hash.substring(1,9) !== 'product/')
-                routing()
-        }
+    }
+    else if(location.hash.slice(1) === 'offers'){
+        createPageOfSales()
     }
     else if(location.hash.substring(1,9) === 'catalog/'){
             var id = location.hash.slice(9)
