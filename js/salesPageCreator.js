@@ -35,8 +35,8 @@ function checkButtons(){
     JSON.stringify(sendRequest('GET', URL)
         .then(data => {
             for (var key in data.sales) {
-                if(document.getElementById("visit"+key))
-                    document.getElementById("visit"+key).onclick = () => {
+                if(document.getElementById("visit"+data.sales[key].id))
+                    document.getElementById("visit"+data.sales[key].id).onclick = () => {
                     var fir = "offer/"
                     var two = data.sales[key].id
                     location.hash = fir.concat(two)
