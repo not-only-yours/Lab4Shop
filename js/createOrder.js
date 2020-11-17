@@ -23,25 +23,27 @@ function createOrder() {
     div1.appendChild(div2)
     var p = document.createElement('p')
     p.innerHTML = "Name"
+    p.id = "pName"
     div2.appendChild(p)
 
 
     var inName = document.createElement('input')
     inName.type = "text"
     inName.id = "name"
-    inName.pattern = "[a-zA-z]{1,15}"
+    inName.pattern = "[A-Z][a-z]{1,15}"
     div2.appendChild(inName)
     div3 = document.createElement('div')
     div3.classList.add("div2")
     div1.appendChild(div3)
     p1 = document.createElement('p')
     p1.innerHTML = "Surname"
+    p1.id = "pSurname"
     div3.appendChild(p1)
 
     var input = document.createElement('input')
     input.type = "text"
     div3.appendChild(input)
-    input.pattern = "[a-zA-z]{1,15}"
+    input.pattern = "[A-Z][a-z]{1,15}"
     input.id = "surname"
 
     var div4 = document.createElement('div')
@@ -49,6 +51,7 @@ function createOrder() {
     div1.appendChild(div4)
     var p2 = document.createElement('p')
     p2.innerHTML = "Telephone"
+    p2.id = "pPhone"
     div4.appendChild(p2)
 
 
@@ -63,6 +66,7 @@ function createOrder() {
     div1.appendChild(div5)
     var p3 = document.createElement('p')
     p3.innerHTML = "Email"
+    p3.id = "pMail"
     div5.appendChild(p3)
 
 
@@ -83,7 +87,7 @@ function createOrder() {
     var input3 = document.createElement('input')
     input3.type = "text"
     div7.appendChild(input3)
-
+    input3.id = "address"
 
     div8 = document.createElement('div')
     div1.appendChild(div8)
@@ -94,7 +98,7 @@ function createOrder() {
     var input4 = document.createElement('input')
     input4.type = "text"
     div8.appendChild(input4)
-
+    input4.id = "typeofPaying"
 
     div6 = document.createElement('div')
     document.getElementById('allMain').appendChild(div6)
@@ -126,12 +130,16 @@ function createOrder() {
     document.getElementById('viber').onclick = function (){
         if(!validateEmail(document.getElementById('mail').value)){
             input2.setCustomValidity("invalid")
+            document.getElementById('pMail').innerHTML += " (write correct mail)"
         }if(!document.getElementById('name').checkValidity() || document.getElementById('name').value === ""){
             inName.setCustomValidity("invalid")
+            document.getElementById('pName').innerHTML += " (English, big letter than small)"
         }if(!document.getElementById('surname').checkValidity() || document.getElementById('surname').value === ""){
             input1.setCustomValidity("invalid")
+            document.getElementById('pSurname').innerHTML += " (English, big letter than small)"
         }if(!document.getElementById('phone').checkValidity() || document.getElementById('phone').value === ""){
             input.setCustomValidity("invalid")
+            document.getElementById('pPhone').innerHTML += " (\'+\' than 13 numbers)"
         }if(validateEmail(document.getElementById('mail').value) && document.getElementById('name').checkValidity() && document.getElementById('surname').checkValidity()  && document.getElementById('phone').checkValidity()){
             reqestSended = true
             location.hash = "checkOrderStatus"
@@ -223,7 +231,38 @@ function createVarOfOrder(){
     var p1 = document.createElement('p')
     p1.innerHTML = "Surname: " + document.getElementById('surname').value
     div3.appendChild(p1)
-    
+
+    var div4 = document.createElement('div')
+    div4.classList.add('div1')
+    div1.appendChild(div4)
+    var p2 = document.createElement('p')
+    p2.innerHTML = "Phone: " + document.getElementById('phone').value
+    div4.appendChild(p2)
+
+    var div5 = document.createElement('div')
+    div5.classList.add('div1')
+    div1.appendChild(div5)
+    var p3 = document.createElement('p')
+    p3.innerHTML = "Mail: " + document.getElementById('mail').value
+    div5.appendChild(p3)
+
+
+    if(document.getElementById('address').value!==""){
+        var div6 = document.createElement('div')
+        div6.classList.add('div1')
+        div1.appendChild(div6)
+        var p4 = document.createElement('p')
+        p4.innerHTML = "Address: " + document.getElementById('address').value
+        div6.appendChild(p4)
+    }
+    if(document.getElementById('typeofPaying').value!==""){
+        var div7 = document.createElement('div')
+        div7.classList.add('div1')
+        div1.appendChild(div7)
+        var p5 = document.createElement('p')
+        p5.innerHTML = "Type of paying: " + document.getElementById('typeofPaying').value
+        div7.appendChild(p5)
+    }
     order= div
 }
 
