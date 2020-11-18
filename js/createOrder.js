@@ -57,7 +57,7 @@ function createOrder() {
 
     var input1 = document.createElement('input')
     input1.type = "text"
-    input1.pattern = "[+0-9]{13}"
+    input1.pattern = "[+][0-9]{13}"
     input1.id = "phone"
 
     div4.appendChild(input1)

@@ -20,7 +20,6 @@ document.getElementById("bikes").onclick = function () {
 document.getElementById("main").onclick = function (){
     location.hash = '';
     createMain();
-
     document.getElementById('basket').style.display = "block"
     createCart()
 }
@@ -61,12 +60,9 @@ function mainSale(){
         .then(data => {
             for(var key in data.bikes) {
                 if (parseInt(data.bikes[key].id) === 8) {
-                    console.log("wegegwwegewfg")
                     addToLocalStorage(data.bikes[key])
                 }
             }
         })
         .catch(err => console.log(err)))
 }
-
-

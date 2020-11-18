@@ -19,6 +19,7 @@ function routing(){
     }
     else if(location.hash.slice(1) === 'offers'){
         createPageOfSales()
+        document.getElementById('basket').style.display = "block"
     }
     else if(location.hash.substring(1,9) === 'catalog/'){
             var id = location.hash.slice(9)
@@ -60,6 +61,7 @@ function routing(){
     }
         else{
             createMain();
+
             document.getElementById('basket').style.display = "block"
             createCart()
         }
