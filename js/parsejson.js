@@ -31,3 +31,24 @@ JSON.stringify(sendRequest('GET', URL)
     .catch(err => console.log(err)))
 
 
+function sendPOST(method,url,body = null){
+
+
+    return fetch(url, {
+        method: method,
+        body: JSON.stringify(body)
+    }).then(response => {
+        if (response.ok) {
+            console.log(response.status);
+            return response.json()
+        }
+
+        return response.json().then(error => {
+            const e = new Error('Что-то пошло не так')
+            e.data = error
+            throw e
+        })
+    })
+}
+
+

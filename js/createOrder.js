@@ -119,7 +119,6 @@ function createOrder() {
         btn.style.height = "60px"
         btn.style.padding = "0"
         btn.classList.add('AddButton')
-        btn.onclick = send()
         document.getElementById('allMain').appendChild(btn)
     }
     else {
@@ -144,8 +143,25 @@ function createOrder() {
             input.setCustomValidity("invalid")
             document.getElementById('pPhone').innerHTML += " (\'+\' than 13 numbers)"
         }if(validateEmail(document.getElementById('mail').value) && document.getElementById('name').checkValidity() && document.getElementById('surname').checkValidity()  && document.getElementById('phone').checkValidity()){
+            const body = {
+                "mail": document.getElementById('mail').value,
+                "name": document.getElementById('name').value,
+                "surname": document.getElementById('surname').value,
+                "phone": document.getElementById('phone').value,
+                "address": document.getElementById('address').value,
+                "typeofPaying": document.getElementById('typeofPaying').value,
+                "cart": JSON.parse(localStorage["cart"])
+            }
+            console.log(body)
+            sendPOST('POST', '../db.json' , body)
+                .then(data => console.log(data))
+                .catch(err =>console.log(err))
+
+
             reqestSended = true
             location.hash = "checkOrderStatus"
+
+
         }
     }
 }
@@ -153,7 +169,7 @@ function createOrder() {
 
 function creator() {
     var arr = JSON.parse(localStorage["cart"])
-    console.log(arr)
+    //console.log(arr)
     for (var key in arr) {
         document.getElementById('basketDi').innerHTML = ""
         var paras = document.getElementsByClassName('oneofItemInCart');
