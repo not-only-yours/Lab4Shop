@@ -57,7 +57,7 @@ function createOrder() {
 
     var input1 = document.createElement('input')
     input1.type = "text"
-    input1.pattern = "[+][0-9]{13}"
+    input1.pattern = "[+][0-9]{12}"
     input1.id = "phone"
 
     div4.appendChild(input1)
@@ -116,6 +116,9 @@ function createOrder() {
         btn.style.width = "100%"
         btn.style.height = "50px"
         btn.innerHTML = "submit"
+        btn.style.height = "60px"
+        btn.style.padding = "0"
+        btn.classList.add('AddButton')
         btn.onclick = send()
         document.getElementById('allMain').appendChild(btn)
     }
@@ -215,7 +218,8 @@ function createVarOfOrder(){
     div.style.backgroundColor = "white"
     var h1 = document.createElement('h1')
     div.appendChild(h1)
-    h1.innerHTML = "confirmed order"
+    h1.innerHTML = "thank you! order confirmed!"
+    h1.style.backgroundColor = "green"
     var div1 = document.createElement('div')
     div1.classList.add("parent")
     div.appendChild(div1)
