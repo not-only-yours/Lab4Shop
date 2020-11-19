@@ -153,7 +153,7 @@ function createOrder() {
                 "cart": JSON.parse(localStorage["cart"])
             }
             console.log(body)
-            sendPOST('POST', 'https://my-json-server.typicode.com/not-only-yours/Lab4Shop/orders' , body)
+            sendPOST('POST', 'https://my-json-server.typicode.com/not-only-yours/Lab4Shop/db' , body)
                 .then(data => console.log(data))
                 .catch(err =>console.log(err))
 
