@@ -1,4 +1,4 @@
-const URL = 'https://raw.githubusercontent.com/not-only-yours/Lab4Shop/main/db.json';
+const URL = 'https://my-json-server.typicode.com/not-only-yours/Lab4Shop/db';
 var json
 function sendRequest(method, url, body = null) {
 
@@ -51,5 +51,3 @@ function sendPOST(method,url,body = null){
         })
     })
 }
-
-
