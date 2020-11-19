@@ -130,18 +130,22 @@ function createOrder() {
     }
 
     document.getElementById('viber').onclick = function (){
+        input2.setCustomValidity("")
+        inName.setCustomValidity("")
+        input.setCustomValidity("")
+        input1.setCustomValidity("")
         if(!validateEmail(document.getElementById('mail').value)){
             input2.setCustomValidity("invalid")
-            document.getElementById('pMail').innerHTML += " (write correct mail)"
+            document.getElementById('pMail').innerHTML = "Email (write correct mail)"
         }if(!document.getElementById('name').checkValidity() || document.getElementById('name').value === ""){
             inName.setCustomValidity("invalid")
-            document.getElementById('pName').innerHTML += " (English, big letter than small)"
+            document.getElementById('pName').innerHTML = "Name (English, big letter than small)"
         }if(!document.getElementById('surname').checkValidity() || document.getElementById('surname').value === ""){
             input1.setCustomValidity("invalid")
-            document.getElementById('pSurname').innerHTML += " (English, big letter than small)"
+            document.getElementById('pSurname').innerHTML = "Surname (English, big letter than small)"
         }if(!document.getElementById('phone').checkValidity() || document.getElementById('phone').value === ""){
             input.setCustomValidity("invalid")
-            document.getElementById('pPhone').innerHTML += " (\'+\' than 13 numbers)"
+            document.getElementById('pPhone').innerHTML = "Phone (\'+\' than 13 numbers)"
         }if(validateEmail(document.getElementById('mail').value) && document.getElementById('name').checkValidity() && document.getElementById('surname').checkValidity()  && document.getElementById('phone').checkValidity()){
             const body = {
                 "mail": document.getElementById('mail').value,
@@ -163,6 +167,7 @@ function createOrder() {
 
 
         }
+
     }
 }
 
