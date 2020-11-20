@@ -1,4 +1,4 @@
-const URL = 'https://my-json-server.typicode.com/not-only-yours/Lab4Shop/db';
+const URL = 'https://my-json-server.typicode.com/not-only-yours/jsonFileFor4Lab/db';
 var json
 function sendRequest(method, url, body = null) {
 
