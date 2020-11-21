@@ -1,23 +1,16 @@
 [
-{
-  "id": "0",
-  "mail": "",
-  "name": "",
-  "surname": "",
-  "cart": ""
-},
   {
-  "id": "1",
-  "mail": "",
-  "name": "",
-  "surname": "",
-  "cart": ""
-},
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "phone": "1-770-736-8031 x56442"
+  },
   {
-  "id": "2",
-  "mail": "",
-  "name": "",
-  "surname": "",
-  "cart": ""
-}
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "phone": "1-770-736-8031 x56442"
+  }
 ]
