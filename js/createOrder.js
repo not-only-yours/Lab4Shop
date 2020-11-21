@@ -151,9 +151,9 @@ function createOrder() {
                 "mail": document.getElementById('mail').value,
                 "name": document.getElementById('name').value,
                 "surname": document.getElementById('surname').value,
-                "phone": document.getElementById('phone').value,
-                "address": document.getElementById('address').value,
-                "typeofPaying": document.getElementById('typeofPaying').value,
+                // "phone": document.getElementById('phone').value,
+                // "address": document.getElementById('address').value,
+                // "typeofPaying": document.getElementById('typeofPaying').value,
                 "cart": JSON.parse(localStorage["cart"])
             }
             console.log(body)
