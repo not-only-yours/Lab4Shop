@@ -66,3 +66,6 @@ function mainSale(){
         })
         .catch(err => console.log(err)))
 }
+
+
+

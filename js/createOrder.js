@@ -1,5 +1,6 @@
 var reqestSended = false;
 var order;
+var answerId;
 document.getElementById('createorder').onclick = () =>{
     location.hash = "createOrder"
 }
@@ -148,24 +149,29 @@ function createOrder() {
             document.getElementById('pPhone').innerHTML = "Phone (\'+\' than 13 numbers)"
         }if(validateEmail(document.getElementById('mail').value) && document.getElementById('name').checkValidity() && document.getElementById('surname').checkValidity()  && document.getElementById('phone').checkValidity()){
             const body = {
-                "mail": document.getElementById('mail').value,
+                "email": document.getElementById('mail').value,
                 "name": document.getElementById('name').value,
                 "surname": document.getElementById('surname').value,
-                // "phone": document.getElementById('phone').value,
-                // "address": document.getElementById('address').value,
-                // "typeofPaying": document.getElementById('typeofPaying').value,
+                 "phone": document.getElementById('phone').value,
+                "address": document.getElementById('address').value,
+                "typeofPaying": document.getElementById('typeofPaying').value,
                 "cart": JSON.parse(localStorage["cart"])
             }
             console.log(body)
-            sendPOST('POST', 'https://my-json-server.typicode.com/not-only-yours/Lab4Shop/db' , body)
-                .then(data => console.log(data))
+            sendPOST('POST', 'https://jsonplaceholder.typicode.com/users' , body)
+                .then(data => {
+                    answerId = data.id
+                })
                 .catch(err =>console.log(err))
 
 
             reqestSended = true
-            location.hash = "checkOrderStatus"
-
-
+            if(answerId)
+            location.hash = "checkOrderStatus/" + answerId
+            else{
+                answerId = 11
+                location.hash = "checkOrderStatus/" + answerId
+            }
         }
 
     }
