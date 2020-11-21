@@ -309,48 +309,69 @@ margin: 0 10px 0 10px;
 
 .slider {
     position: relative;
-    width: 100%;
     overflow: hidden;
 }
-.images {
+
+.slider__wrapper {
     display: flex;
-    width: 100%;
+    transition: transform 0.6s ease;
 }
-.images img {
-    height: 80%;
-    width: 100%;
-    transition: all 1s ease;
+
+.slider__item {
+    flex: 0 0 50%;
+    max-width: 50%;
 }
-.images input {
-    display: none;
-}
-.dots {
+
+.slider__control {
+    position: absolute;
+    top: 50%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: -60px;
-    margin-bottom: 20px;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
 }
-.dots label {
-    height: 20px;
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.slider__control_left {
+    left: 0;
+}
+
+.slider__control_right {
+    right: 0;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
     width: 20px;
-    border-radius: 50%;
-    border: solid #fff 3px;
-    cursor: pointer;
-    transition: all 1s ease;
-    margin: 5px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
 }
 
-.dots label:hover {background: #fff;}
+.slider__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
 
-#img1:checked ~ .m1 {
-    margin-left: 0;
+.slider__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
-#img2:checked ~ .m2 {
-    margin-left: -100%;
-}
-#img3:checked ~ .m3 {
-    margin-left: -200%;
-}
-#img4:checked ~ .m4 {
-    margin-left: -300%;
+
+.slider__item>div {
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
 }

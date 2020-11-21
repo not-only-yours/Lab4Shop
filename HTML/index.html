@@ -71,23 +71,22 @@
     <h1>everybody can join us</h1>
 
     <div class="slider">
-        <div class="images">
-            <input type="radio" name="slide" id="img1" checked>
-            <input type="radio" name="slide" id="img2">
-            <input type="radio" name="slide" id="img3">
-            <input type="radio" name="slide" id="img4">
-
-            <img src="../HTML/images/scroll/salesOrScrollbar.jpg" class="m1" alt="img1">
-            <img src="../HTML/images/scroll/salesOrScrollbar2.jpg" class="m2" alt="img2">
-            <img src="../HTML/images/scroll/salesOrScrollbar3.jpg" class="m3" alt="img3">
-            <img src="../HTML/images/scroll/salesOnScrollbar4.jpg" class="m4" alt="img4">
+        <div class="slider__wrapper">
+            <div class="slider__item">
+                <div style="height: 390px; background-image: url(../HTML/images/scroll/salesOrScrollbar.jpg);background-size: cover;"></div>
+            </div>
+            <div class="slider__item">
+                <div style="height: 390px; background-image: url(../HTML/images/scroll/salesOrScrollbar2.jpg);background-size: cover;"></div>
+            </div>
+            <div class="slider__item">
+                <div style="height: 390px; background-image: url(../HTML/images/scroll/salesOrScrollbar3.jpg);background-size: cover;"></div>
+            </div>
+            <div class="slider__item">
+                <div style="height: 390px; background-image: url(../HTML/images/scroll/salesOnScrollbar4.jpg);background-size: cover;"></div>
+            </div>
         </div>
-        <div class="dots">
-            <label for="img1"></label>
-            <label for="img2"></label>
-            <label for="img3"></label>
-            <label for="img4"></label>
-        </div>
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+        <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
     </div>
 
 

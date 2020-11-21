@@ -38,8 +38,15 @@
     margin: 0 auto;
 }
 
+.about__left{
+    min-width: 500px;
+}
+.about__right{
+    max-width: 40%;
+}
 
-@media screen and (max-width: 1500px) {
+
+@media screen and (max-width: 1700px) {
     nav{
         margin-left: 20%;
     }
@@ -49,6 +56,9 @@
     .about__right{
         text-align:  center;
         margin-left: 0;
+    }
+    .about__right{
+        max-width: 100%;
     }
     .about__right p{
         margin-left: 20px;
