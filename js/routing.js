@@ -50,14 +50,18 @@ function routing(){
         document.getElementById('basket').style.display = "block"
         createCart()
     }else if(location.hash.slice(1) === 'createOrder'){
-        createOrder();
         document.getElementById('basket').style.display = "none"
         document.getElementById('basketDi').style.display = "none"
         document.getElementById("cart").style.display = "none";
         document.getElementById("menu").style.display = "block";
+        createOrder();
+
     }else if(location.hash.slice(1) === 'checkOrderStatus/' + answerId && reqestSended){
         createVarOfOrder();
         checkOrderStatus();
+        creator()
+        localStorage.removeItem("cart")
+        document.querySelectorAll('.orderDelete').forEach(e => e.remove());
     }
         else{
             createMain();
